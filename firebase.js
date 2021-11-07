@@ -8,7 +8,7 @@ import { getStorage } from "firebase/storage";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: "AIzaSyBBPBkCNZaAb4nR-kPqBEcQnKSLvFABQcA",
+	apiKey: process.env.GOOGLE_API_KEY,
 	authDomain: "instagram-clone-afc5f.firebaseapp.com",
 	projectId: "instagram-clone-afc5f",
 	storageBucket: "instagram-clone-afc5f.appspot.com",
@@ -18,7 +18,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = !getApps().length ? initializeApp(firebaseConfig): getApp();
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 const analytics = getAnalytics(app);
 const db = getFirestore();
 const storage = getStorage();

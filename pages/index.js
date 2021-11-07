@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen py-2 overflow-y-scroll">
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>Instagram 2.0</title>
         <link rel="icon" href="/favicon.ico" />

@@ -19,7 +19,15 @@ function Feed() {
 				{/* Stories */}
 				<Stories />
 				{/* Posts */}
-				<Posts />
+				{session ? (
+					<Posts />
+				) : (
+					<div className="flex flex-col items-center justify-center min-h-full">
+						<h1 className="text-4xl font-bold text-gray-800">
+							Sign in first
+						</h1>
+					</div>
+				)}
 			</section>
 
 			{session && (

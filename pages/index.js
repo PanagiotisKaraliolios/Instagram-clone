@@ -3,6 +3,7 @@ import Feed from "../components/Feed";
 import Header from "../components/Header";
 import Modal from "../components/Modal";
 
+
 export default function Home() {
 	return (
 		<div className="flex flex-col min-h-screen">

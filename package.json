@@ -10,7 +10,7 @@
 		"@heroicons/react": "^1.0.5",
 		"@tailwindcss/forms": "^0.3.4",
 		"faker": "^5.5.3",
-		"firebase": "^9.6.4",
+		"firebase": "^9.20.0",
 		"moment": "^2.29.2",
 		"next": "latest",
 		"next-auth": "4.0.0-beta.6",
